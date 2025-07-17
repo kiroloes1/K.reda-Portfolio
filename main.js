@@ -143,7 +143,7 @@ let projectData = [
   }
 ];
 
-const card=document.querySelector(".product-element")
+const card=document.querySelector(".product-element");
 
 
 projectData.forEach((project) => {
@@ -236,3 +236,8 @@ projectData.forEach((project) => {
     </div>
   `;
 });
+
+ 
+
+
+

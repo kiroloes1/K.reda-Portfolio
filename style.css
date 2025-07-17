@@ -6,13 +6,13 @@
    }
  :root {
   --dark-vio: #6C63FF;      /* بنفسجي */
-  --dark-blue: #2a2e61;     /* كحلي داكن */
-  --hover-pink: #FF6584;    /* وردي */
-  --light:#F7F7F7
-    --dark-vio: rgba(154, 80, 224, 0.651);
+
+   
   --dark-blue: rgb(3, 31, 82);
   --hover-pink: #FF6584;
   --light: #ffffff;
+
+
 }
 
 body {
@@ -270,4 +270,71 @@ nav {
 .project-img:hover {
   opacity: 0.9;
   cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: var(--dark-blue) !important;
+  color: var(--light) !important;
+}
+
+footer h5 {
+  color: var(--hover-pink) !important;
+}
+
+footer a {
+  color: var(--light) !important;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--hover-pink) !important;
+}
+
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+
+.CV h1{
+ font-size: 3em !important;
+ font-weight: 800;
+ color: var(--dark-blue); 
+}
+
+
+.toggle {
+  display: none;
+}
+
+#btnDownload {
+  position: relative;
+  z-index: -5;
+}
+
+.up-animation {
+  animation: upTodown 0.8s ease forwards;
+}
+a{
+  text-decoration: none;
+}
+
+@keyframes upTodown {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0;
+    z-index: 0;
+  }
+}
+
+
+
+
+@media (max-width:1000px) {
+  .CV img{
+    width:100%  
+  }
 }
