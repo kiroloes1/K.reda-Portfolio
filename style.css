@@ -1,0 +1,273 @@
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   }
+ :root {
+  --dark-vio: #6C63FF;      /* بنفسجي */
+  --dark-blue: #2a2e61;     /* كحلي داكن */
+  --hover-pink: #FF6584;    /* وردي */
+  --light:#F7F7F7
+    --dark-vio: rgba(154, 80, 224, 0.651);
+  --dark-blue: rgb(3, 31, 82);
+  --hover-pink: #FF6584;
+  --light: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F7;
+  color: var(--dark-blue);
+  background-image: url('./pic/body-bg.png');
+  background-position: 50%;
+  background-size: cover;
+ 
+}
+
+/* تنسيق شريط التمرير الأساسي */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* الخلفية وراء الشريط */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* مقبض التمرير */
+::-webkit-scrollbar-thumb {
+  background:var(--dark-blue);
+  border-radius: 5px;
+}
+
+/* عند التحويم على المقبض */
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(3, 31, 82, 0.705);
+}
+
+
+/* Navbar */
+nav li a, nav a {
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  color: var(--dark-blue) !important;
+}
+
+nav h2 {
+  font-size: 1.8em !important;
+  font-weight: 700 !important;
+  color: var(--dark-vio) !important;
+}
+
+nav li {
+  margin-right: 10px !important;
+  position: relative;
+}
+
+nav .active {
+  color: var(--hover-pink) !important;
+  font-weight: 800 !important;
+}
+
+nav {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  position: sticky !important;
+  top: 0;
+  background-color: white;
+  z-index: 5;
+}
+
+/* Hover Animation with borders */
+.nav-link {
+  border-style: solid;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-color: var(--dark-vio);
+  position: relative;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--dark-vio);
+  transition: 0.4s ease;
+}
+
+.nav-link::before {
+  top: 0;
+  left: 0;
+}
+
+.nav-link::after {
+  bottom: 0;
+  right: 0;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  border-left-width: 2px;
+  border-right-width: 2px;
+  color: var(--hover-pink) !important;
+}
+
+
+/* header */
+/* النص */
+.introduce-text h1 {
+  margin-top: 10px !important;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+
+.introduce-text h1 span {
+  font-size: 1.8em !important;
+  font-weight: 700 !important;
+  color: var(--dark-vio);
+}
+
+.introduce-text p {
+  font-weight: 600;
+  color: var(--hover-pink);
+  font-size: 1.1em;
+  margin-bottom: 1.5rem;
+}
+
+/* زر HIRE ME */
+.hireME {
+  font-weight: 500 !important;
+  background-image: linear-gradient(to right, var(--dark-vio), #ff658459);
+  border: none !important;
+  color: var(--light);
+  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.226);
+  padding: 8px 16px !important;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.hireME:hover {
+  background: transparent;
+  border: solid 2px var(--hover-pink) !important;
+  color: var(--hover-pink);
+  transform: scale(1.05);
+}
+
+/* زر Download CV */
+.btn-download {
+  border: solid 2px var(--hover-pink) !important;
+  
+  background: transparent;
+  padding: 8px 16px !important;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-download:hover {
+  border: none !important;
+  background-image: linear-gradient(to right, var(--dark-vio), #ff658459) !important;
+  color: var(--light);
+  transform: scale(1.05);
+}
+
+
+/* main */
+/* about section */
+.about h2{
+    font-size:3em;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+.about p{
+  font-weight: 500;
+}
+
+.margin{
+    margin: 10em 0;
+}
+
+.service h2 ,.product h2{
+      font-size:2em;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+.service p{
+      font-size:1em;
+    font-weight: 500;
+    color:#636366;
+}
+
+ h5{
+      font-size:1.4em;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+.service .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  border: none !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1) !important;
+  background-color: #889caa0e !important;
+
+}
+.service .card:hover{
+   transform: scale(1.01) !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
+  cursor: pointer;
+}
+.introduce-text-section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px !important ;
+  padding: 1rem !important;
+}
+
+.introduce-text-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-download {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-download:hover {
+  transform: scale(1.05);
+}
+
+
+/* project */
+
+.project-card {
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  
+  min-height: fit-content;
+  
+}
+
+.project-card:hover {
+    border-radius: 12px;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: fit-content;
+}
+
+.project-img {
+  height: 300px;
+
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.project-img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
