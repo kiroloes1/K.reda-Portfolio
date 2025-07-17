@@ -8,7 +8,7 @@ let projectData = [
     date:"old",
     link:"https://kiroloes1.github.io/My-Website/#Projects",
         
-        listImage:["./pic/image/bootstrap/P3.png","./pic/image/bootstrap/P33.png","./pic/image/bootstrap/P333.png",
+        listImage:["/pic/image/bootstrap/P3.png","./pic/image/bootstrap/P33.png","./pic/image/bootstrap/P333.png",
         "./pic/image/bootstrap/P3333.png",
     ]
   },
